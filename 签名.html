@@ -105,7 +105,10 @@
     <script>
         $(function() {
             var $sigdiv = $("#signature");
+            
             $sigdiv.jSignature(); // 初始化jSignature插件.
+            
+            
             $("#yes").click(function(){
                 //将画布内容转换为图片
                 var datapair = $sigdiv.jSignature("getData", "image");

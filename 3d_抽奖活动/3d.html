@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)http://www.jq22.com/demo/3dchoujiang201803051219/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>3D抽奖</title>
+<link rel="stylesheet" href="index.css" media="screen" type="text/css">
+
+<style>
+html{
+	background:#000;
+}
+</style>
+
+</head>
+<body style="">
+<div class="container none" style="display: none;"></div>
+<div class="mask" style="display: none;"></div>
+<div id="stop" class="btn_circle none" style="display: none;">停止</div>
+<div class="lucky_title">抽奖活动</div>
+<div class="loader_file" style="display: none;">
+用户数据导入中 <span class="current_number">56</span><span class="all_number">/56</span>
+</div>
+<div class="lucky_list clearfix" style="display: block;">
+<div class="left lucky_prize">
+<div class="lucky_prize_box">
+<button class="lucky_prize_left lucky_prize_direction">&lt;</button>
+<div data-default="1" class="lucky_prize_picture">
+<img class="lucky_prize_show none" src="bXshiKc7Z2mQusImhSzC33czcBci3K.png" alt="一等奖笔记本" style="display: inline;">
+<img class="none lucky_prize_show" src="szSy9dU21WZnSdGwP9tE533ntEd1WE.png" alt="二等奖平衡车" style="display: none;">
+<img class="none lucky_prize_show" src="gLz4H2xZ8XxkXlDDGdd8Fd2xF35kjX.png" alt="三等奖现金红包" style="display: none;">
+</div>
+<button class="lucky_prize_right active lucky_prize_direction">&gt;</button>
+</div>
+<div class="lucky_prize_title">一等奖笔记本</div>
+<div class="lucky_setting">
+<span>
+<b class="lucky_number">998</b>
+人参与
+</span>
+<div class="select_box">
+一次抽
+<select name="select_lucky_number" class="select_lucky_number">
+<option selected="selected" value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="10">10</option>
+<option value="20">20</option>
+<option value="30">30</option>
+</select>
+人
+</div>
+</div>
+<div id="open" class="btn_circle btn_start">开始</div>
+</div>
+<div class="right lucky_people_list">
+
+<div class="lucky_people_title">中奖名单</div>
+
+<div class="lpl_list clearfix none active" style="display: block;">
+
+
+</div>
+
+
+<div class="lpl_list clearfix none" style="display: none;">
+</div>
+<div class="lpl_list clearfix none" style="display: none;">
+</div>
+</div>
+</div>
+
+<script src="jquery-1.10.2.js"></script>
+<script src="jquery.min.js"></script>
+<script type="text/javascript" src="transform.js"></script>
+<script type="text/javascript" src="tick.js"></script>
+<script type="text/javascript" src="3d.js"></script>
+<script type="text/javascript" src="lucky.js"></script>
+<script type="text/javascript" src="data.js"></script>
+</body>
+</html>

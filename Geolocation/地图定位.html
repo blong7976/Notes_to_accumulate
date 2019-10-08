@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id='allmap'></div>
+  <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=GDIbuzISab32XqcYLpkhE3lUxNdPKekx"></script>
+  <script>
+    let lng = 0;
+    let lag = 0;
+    // var point = new BMap.Point(0, 0); //以指定的经度和纬度创建一个地理点坐标
+    var geolocation = new BMap.Geolocation();//实例化浏览器定位对象。
+    let aa = geolocation.getCurrentPosition(function (r) {//返回用户当前的位置,定位完成时
+
+      if (this.getStatus() == BMAP_STATUS_SUCCESS) {//定位完成后的状态码。
+        console.log(r)
+        lng = r.point.lng;
+        lag = r.point.lat
+        alert('您的位置：' + r.point.lng + ',' + r.point.lat);
+      }
+      else {
+        alert('failed' + this.getStatus());
+      }
+      return r.point
+    })();
+    console.log(aa)
+    alert(lng)
+
+  </script>
+
+</body>
+
+</html>

@@ -15,16 +15,7 @@
 
 <body>
 <div id='container'></div>
-<div id="tip">
-	<select>
-		<option>陕A90010</option>
-		<option>陕A90011</option>
-		<option>陕A90012</option>
-		<option>陕A90013</option>
-		<option>陕A90014</option>
-		<option>陕A90015</option>
-	</select>
-</div>
+<div id="tip"></div>
 <script type="text/javascript">
   /***************************************
    由于Chrome、IOS10等已不再支持非安全域的浏览器定位请求，为保证定位成功率和精度，请尽快升级您的站点到HTTPS。
@@ -43,7 +34,7 @@
       buttonPosition:'RB'
     });
     map.addControl(geolocation);
-    geolocation.getCurrentPosition();
+    <!-- geolocation.getCurrentPosition(); // 点击按钮调用地图定位方法 -->
     AMap.event.addListener(geolocation, 'complete', onComplete);//返回定位信息
     AMap.event.addListener(geolocation, 'error', onError);      //返回定位出错信息
   });
